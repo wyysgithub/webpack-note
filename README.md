@@ -1,6 +1,12 @@
 # webpack4.x新版本笔记
 
-网络上关于webpack的教程大多已经过时，由于webpack版本更新后许多操作变化很大，很多教程的经验已经不适合。当我们使用npm安装webpack时，若不指定webpack的版本，将默认安装最新版。
+网络上关于webpack的教程大多已经过时，由于webpack版本更新后许多操作变化很大，很多教程的经验已经不适合。
+
+当然，按照个人习惯，我喜欢先install淘宝的npm镜像，这样来速度会快很多。
+
+> npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+有关淘宝npm镜像的链接(https://npm.taobao.org/)
 
 ## 一、创建入口文件
 
@@ -24,11 +30,7 @@ webpack4.x是以项目根目录下的'./src'作为入口，我们需要
 
 ## 三、全局安装webpack
 
-当然，按照个人习惯，我喜欢先install淘宝的npm镜像，这样来速度会快很多。
 
-> npm install -g cnpm --registry=https://registry.npm.taobao.org
-
-有关淘宝npm镜像的链接(https://npm.taobao.org/)
 
 **全局安装webpack**
 
@@ -150,7 +152,11 @@ webpack --mode development --watch --progress --display-modules --colors --displ
 配置步骤：
 
 1、创建工程目录； 
-2、初始化工程目录：npm init。 
-3、全局安装webpack webpack-cli。  
-4、在package.json中配置dev和build的脚本，便只需运行npm run dev/build，作用相同。 
+
+2、初始化工程目录：npm init；
+
+3、全局安装webpack webpack-cli；
+
+4、在package.json中配置dev和build的脚本，便只需运行npm run dev/build，作用相同；
+
 5、在webpack –mode development/production可串联设置其他参数。
